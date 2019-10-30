@@ -1,0 +1,15 @@
+Given an array of integers, find the pair of adjacent elements that has the
+largest product and return that product
+
+Example: inputArray = [3, 6, -2, -5, 7, 3], the output should be
+
+adjacentElementsProduct(inputArray) = 21
+  - since 7 and 3 have the largest product
+
+
+Input/output
+  - [Execution time limit] 0.5 sec (cpp)
+  - [input] array.integer inputArray
+    - for c++ a vector<int>
+    - An array of integers containing at least two elements 
+  - [Output] integer
