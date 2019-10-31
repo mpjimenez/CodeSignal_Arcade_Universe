@@ -1,0 +1,19 @@
+Ticket numbers usually consist of an even number of digits. A ticket number is
+considered lucky if the sum of the first half of the digits is equal to the
+sum of the second half.
+
+Given a ticket number n, determine if its lucky or not
+
+Example:
+  - For n = 1230, the output shoud be isLucky(n) = true;
+  - For n = 239017, isLucky(n) = false;
+
+Input / Output
+  - [Execution time limit] 0.5 sec (cpp)
+  - [input] integer n
+    - A ticket number represented as a positive integer  
+      with an even number of digits.
+    - guranteed constraints: 10 <= n < 10^6
+
+  - [output] boolean
+    - true if n is lucky, false otherwise
