@@ -1,0 +1,18 @@
+Given an array of strings, return another array containing all of its 
+longest strings.
+
+Example:
+  - For inputArray = ["aba", "aa", "ad", "vcd", "aba"], the output
+    should be:
+    allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
+
+
+Input/output
+  - [execution time] 0.5 sec (cpp)
+  - [input] array.string inputArray
+    - vector<string> for C++
+  - [output] array.string
+    - vector<string> for c++
+
+
+    
