@@ -13,19 +13,15 @@ void print(vector<vector<int>> matrix) {
   cout << "=--------------------------" << endl;
 }
 
-int matrix_element_sum(vector<vector<int>> mat) {
-  int sum {0};
-  for (int row = 0; row < mat.size(); row ++) {
-    for (int col = 0; col < mat[row].size(); col++) {
-      if(mat[row][col] == 0 && row != mat.size() - 1) {
-        mat[row + 1][col] = 0;
-      }
-    }
-  }
+int matrixElementSum(vector<vector<int>> mat) {
+  int sum{0};
 
-  for (auto val : mat) {
-    for (auto num : val) {
-      sum += num;
+  for (int row = 0; row < mat.size(); row++) {
+    for (int col = 0; col < mat[row].size(); col++) {
+      if (mat[row][col] != 0 && row == 0)
+        sum += mat[row][col];
+      else if (mat[row][col] != 0 && mat[row - 1][col] != 0 && mat[0][col] != 0)
+        sum += mat[row][col];
     }
   }
   return sum;
@@ -33,13 +29,19 @@ int matrix_element_sum(vector<vector<int>> mat) {
 
 int main() {
   int sum {0};
-  vector<vector<int>> matrix {
+  vector<vector<int>> matrix1 {
     {0, 1, 1, 2},
     {0, 5, 0, 0},
     {2, 0, 3, 3}
   };
 
-  sum = matrix_element_sum(matrix);
+  vector<vector<int>> matrix2 {
+    {1, 1, 1, 0},
+    {0, 5, 0, 1},
+    {2, 1, 3, 10}
+  };
+
+  sum = matrixElementSum(matrix2);
   cout << "The sum: " << sum << endl;
 
   return EXIT_SUCCESS;
