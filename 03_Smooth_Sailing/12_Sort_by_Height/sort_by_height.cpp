@@ -11,7 +11,6 @@ void print(vector<int> a) {
 }
 
 vector<int> sortByHeight(vector<int> a) {
-  
   int minNdx{0};
   int minVal {10000};
   int temp{0};
