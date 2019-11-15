@@ -19,6 +19,7 @@ bool areSimilar(vector<int> a, vector<int> b) {
   int count {0};
   cout << "beginning: " << count << " " << endl;
   for (int ndx = 0; ndx < a.size(); ndx++) {
+    
     if (a[ndx] == b[ndx]) {
       count += 1; 
       cout << "Same: " << count << endl;

@@ -1,0 +1,25 @@
+You are given an array on integers. On each move you are allowed to increase
+exactly one of its element by one. Find the minimal number of moves required
+to obtain a strictly increasing sequence from the input
+
+- Example:
+    - For inputArray = [1, 1, 1], the output should be
+      arrayChange(inputArray) = 3;
+
+- Input / output
+  - [execution time] 0.5 seconds (cpp)
+
+  - [input] array.integer 
+    vector<int> for C Plus Plus
+  
+    - Guaranteed constraints:
+      - 3 <= inputArray.length <= 10^5
+      - 10^5 <= inputArray[i] <= 10^5
+
+  - [output] integer
+
+    - The minimal number of moves needed to obtain a strictly increasing
+      sequence from inputArray.
+
+    - It's guranteed that for the given test cases the answer always fits
+      in singed 32-bit integer type.
