@@ -48,17 +48,5 @@ int main() {
   else 
     cout << "False" << endl;
  
-
-  /* TO DO:
-    - First check if length of string is 1. If so, return true;
-    - iterate through characters in string and put into hashmap, value is # of occurrences in word
-    - go through the hashmap and to see if any value is not even.
-    - If this result is greater than 1 retrun false;
-
-  */ 
-
-
-
-
   return EXIT_SUCCESS;
 }
