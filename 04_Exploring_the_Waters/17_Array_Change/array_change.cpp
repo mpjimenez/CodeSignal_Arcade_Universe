@@ -19,43 +19,42 @@ void showqueue(queue <int> s) {
 } 
 
 int arrayChange(vector<int> inputArray) {
-  // int count {0};
-  // queue<int> q;
+  int count {0};
+  queue<int> q;
 
-  // q.push(inputArray[0]); // put first element into queue
-  // cout << "First element" << q.front() << endl;
-  // for (int ndx = 1; ndx < inputArray.size(); ndx++) {
-  //   int temp = inputArray[ndx];
-  //   cout << "q.front(): " << q.front() << " Temp: " << temp << " Count: "<< count << endl;
+  q.push(inputArray[0]); // put first element into queue
+  cout << "First element" << q.front() << endl;
+  for (int ndx = 1; ndx < inputArray.size(); ndx++) {
+    int temp = inputArray[ndx];
+    cout << "q.front(): " << q.front() << " Temp: " << temp << " Count: "<< count << endl;
 
-  //   while (temp <= q.front()) {
-  //     count ++;
-  //     temp++;
-  //     cout << "Count: " << count << " temp: " << temp << endl;
-  //   }
-  //   cout << "------------------------------" << endl;
-  //   inputArray[ndx] = temp;
-  //   q.pop();
-  //   q.push(inputArray[ndx]);
-  // }
-
-  
-    int ma = -1e6;
-    int ans = 0;
-    
-    for(int i : inputArray) {
-      cout << "====  " << ma << "  ====" << endl;
-      ma = max(ma + 1, i);
-      ans += ma - i;
-      cout << "ma: " << ma << " ans: " << ans << endl;
-      cout << "---------------------------" << endl;
+    while (temp <= q.front()) {
+      count ++;
+      temp++;
+      cout << "Count: " << count << " temp: " << temp << endl;
     }
-    return ans;
+    cout << "------------------------------" << endl;
+    inputArray[ndx] = temp;
+    q.pop();
+    q.push(inputArray[ndx]);
+  }
+
+  /*   This solution is crazy. It's the top C++ solution  */
+    // int ma = -1e6;
+    // int ans = 0;
+    
+    // for(int i : inputArray) {
+    //   cout << "====  " << ma << "  ====" << endl;
+    //   ma = max(ma + 1, i);
+    //   ans += ma - i;
+    //   cout << "ma: " << ma << " ans: " << ans << endl;
+    //   cout << "---------------------------" << endl;
+    // }
+    // return ans;
 
 
 
-
-  //return count;
+  return count;
 
 
 
