@@ -13,8 +13,7 @@ void print(vector<int> vec) {
 int avoidObstacles(vector<int> inputArray) {
   bool collision;
   int count {0};
-  sort(inputArray.begin(), inputArray.end());
-  cout << "sorted:" << endl;
+  cout << "inputArray:" << endl;
   print(inputArray);
 
   for (int jump =  2; jump <= 1001; jump++) {
