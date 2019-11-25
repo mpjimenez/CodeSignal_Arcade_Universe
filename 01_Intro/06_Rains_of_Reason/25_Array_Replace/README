@@ -1,0 +1,29 @@
+Given an array of integers, replace all the occurrences of elemToReplace with
+sustitutionElem.
+
+- Example
+  For inputArray = [1, 2, 1], elemToReplace = 1, and substitutionElm = 3,
+  the output should be arrayReplace(inputArray, sustitutionElm) = [3, 2, 3]
+
+- Input / Output
+  - [execution time limit] 0.5 sec (cpp)
+
+  - [input]
+    - array.integer inputArray
+    - vector<int> for C Plus Plus
+  
+    - Guaranteed constraints:
+      0 <= inputArray.length <= 10^4
+      0 <= inputArray[i] <= 10^9
+
+    - integer elemToReplace
+    - Guaranteed constraints:
+      0 <= elemToReplace <= 10^9
+
+    - integer substitutionElm
+    - Guaranteed constraints
+      0 <= substitutionElm <= 10^9
+
+
+  - [output]
+    array.integer
