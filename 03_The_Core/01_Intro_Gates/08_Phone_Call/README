@@ -1,0 +1,41 @@
+Some phone usage rate may be describred as follows:
+  - First minut of a call cost min1 cents
+  - Each minute from the 2nd up to 10th (inclusive) costs min2_10 cents
+  - Each minute afater 10th cost min11 cents
+
+You have s cents on your account before a call. What is the duration of the 
+longest call (in minutes rounded down to the nearest integer) you can have?
+
+- Example
+  For min1 = 3, min2_10 = 1, min11 = 2, and s = 20, the output should be
+  phoneCall(min1, min2_10, min11, s) = 14.
+
+  Here's why:
+    The first minute cost 3 cents, which leaves you with 20 - 3 = 17 cents
+
+    The total cost of minutes 2 - 10 is 1 * 9 = 9, so you can talk 9 more minutes
+    and still have 17 - 9 = 8 cents.
+
+    Each next minute costs 2 cents, which means that you can talk 8 / 2 = 4 more 
+    minutes.
+
+    Thus, the longest call you can make is 1 + 9 + 4 = 14 minutes long 
+
+
+- Input / output
+  - [execution time limit] 0.5 se (cpp)
+
+  - [input] integer min1
+    Guaranteed Constraints:
+      1 <= min1 <= 10
+
+  - [input] integer min2_10
+    Guaranteed Constraints:
+      1 <= min2_10 <= 10
+    
+  - [input] integer min11
+    Guaranteed Constraints:
+      2 <= min11 <= 500
+
+  - [output] integer
+  
