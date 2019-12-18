@@ -3,10 +3,12 @@
 using namespace std;
 
 int arrayPacking(vector<int> a) {
-  unsigned int packed {0};
-  cout << (a[0] << 16) << endl;
+  int result {0};
 
-  return -1;
+  for (int ndx = 0; ndx < a.size(); ndx++) 
+    result += a[ndx] << 8 * ndx;
+  
+  return result;
 }
 
 int main(int argc, char** argv) {
@@ -16,9 +18,9 @@ int main(int argc, char** argv) {
   vector<int> a1 {23, 45, 39}; // [0010111, 00101101, 00100111 ] in binary
   int result1 {0}; // should be 00100111 00101101 00010111 or 2,567,447
   
-  result = arrayPacking(a);
+  result = arrayPacking(a1);
   cout << "The result of packing vector { ";
-  for (auto val : a)
+  for (auto val : a1)
     cout << val << " ";
   cout << "} is ";
   cout << result << endl;
