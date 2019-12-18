@@ -3,7 +3,8 @@ using namespace std;
 
 int killKthBit(int n, int k) {
 
-  return -1;
+  return ((n & 1 << (k - 1)) ?  (n ^ (1 << (k - 1))) : n);
+  
 }
 
 int main() {
