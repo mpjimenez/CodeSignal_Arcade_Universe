@@ -1,0 +1,20 @@
+Given the age of a person and the adulthood age in a particular country, 
+determine if the person is considered an adult in that country. Note that
+people whose age is the same as the adulthood age are considered adult.
+
+Example
+  For age = 18 and adulthood = 21, the output should be
+  isAdult(age, adulthood) = false;
+
+- Input / Output 
+  - [execution time limit] 0.5 seconds (cpp)
+
+  - [input] integer age
+    Guaranteed Constraints: 1 <= age <= 25
+
+  - [input] integer adulthood
+    Guaranteed Constraints: 14 <= age <= 25
+
+  - [output] boolean
+    true if the person is adult, false otherwise
+    
