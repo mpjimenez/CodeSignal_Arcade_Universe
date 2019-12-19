@@ -5,8 +5,10 @@ using namespace std;
 int arrayPacking(vector<int> a) {
   int result {0};
 
-  for (int ndx = 0; ndx < a.size(); ndx++) 
+  for (int ndx = 0; ndx < a.size(); ndx++) {
+    cout << "Number: " << a[ndx] << " Shifted " << 8 * ndx << " bits: " << (a[ndx] << 8 * ndx) << endl;
     result += a[ndx] << 8 * ndx;
+  }
   
   return result;
 }
