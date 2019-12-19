@@ -1,0 +1,15 @@
+Reverse the order of the bits in a given integer.
+
+Example
+  For a = 97, the output should be mirrorBits(a) = 67.
+
+  97 equals to 1100001 in binary, which is 1000011 after mirroring,
+  and that is 67 in base 10.
+
+- Input / Output 
+  - [execution time limit] 0.5 seconds (cpp)
+
+  - [input] integer a 
+    Guranteed Constraints: 5 <= a <= 10^5 
+  
+  - [ouput] integer
