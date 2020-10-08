@@ -1,0 +1,33 @@
+Picture a map of a battlefield divided into two halves. Points which lie to the
+left of the line x = 0 are on the forest free side, while points which lie on
+or to the right of the line are in the forest.
+
+Your army needs to get from point a to point b. The problem is that while 
+point a is located on the forest free side where your army's speed is 
+v1 miles per hour, point b is located in the forest, where your speed
+is reduced to v2 miles per hour.
+
+Caluclate the shortest possible travel time for your army to reach 
+point b.
+
+Example
+  For a =[-1.5, 0.5], b = [1.5, 1.5], 
+      v1 = 4.4, and v2 = 1.1, the output should be:
+    ArmyMarch(a, b, v1, v2 = ) 1.761942
+
+  The optimal route is A(-1.5, 0.5) --> (0, 1.31899) --> B(1.5, 1.5)
+
+Input/Output 
+  [input] array.float a 
+    Array of two floats representing coordinates for point a in miles.
+     It is guaranteed that a[0] < 0
+
+  Guaranteed constraints:
+    -25.0 <= a[i] <= 35
+
+  [input] array.float b
+    Array of two floats representing coordinates for point b in miles.
+    It is guaranteed that b[0] >= 0
+
+  Guaranteed constraints:
+    -25.0 <= b[i] <= 35.0
